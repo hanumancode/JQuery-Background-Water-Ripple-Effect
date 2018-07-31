@@ -5,9 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>JQuery Background Water Ripple Effect</title>
-    <link rel="stylesheet" href="style.css">
+    <link type="text/css" rel="stylesheet" href="style.css" />
 </head>
 <body>
     <section></section>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="jquery.ripples-min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('section').ripples({
+                dropRadius: 12,
+                perturbance: 0.05,
+            });
+        })
+    </script>
+
 </body>
 </html>
